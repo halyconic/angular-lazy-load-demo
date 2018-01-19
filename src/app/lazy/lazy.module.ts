@@ -1,3 +1,5 @@
+import { SharedModule } from './../shared/shared.module';
+import { UuidService } from './../uuid/uuid.service';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -11,6 +13,7 @@ export const ROUTES: Routes = [
 
 @NgModule({
   imports: [
+    SharedModule,
     RouterModule.forChild(ROUTES)
   ],
   declarations: [
