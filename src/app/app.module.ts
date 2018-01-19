@@ -4,13 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 // containers
 import { AppComponent } from './app.component';
+import { EagerComponent } from './eager/eager.component';
 
 // routes
 export const ROUTES: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
-  { path: 'dashboard', loadChildren: '../dashboard/dashboard.module#DashboardModule' },
-  { path: 'settings', loadChildren: '../settings/settings.module#SettingsModule' },
-  { path: 'reports', loadChildren: '../reports/reports.module#ReportsModule' }
+  { path: '', pathMatch: 'full', redirectTo: 'eager' },
+  { path: 'eager', component: EagerComponent },
+  { path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule' },
 ];
 
 @NgModule({
@@ -19,7 +19,8 @@ export const ROUTES: Routes = [
     RouterModule.forRoot(ROUTES)
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    EagerComponent
   ],
   bootstrap: [
     AppComponent

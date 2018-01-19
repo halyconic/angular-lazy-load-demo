@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
       <h1>Lazy loading demo</h1>
       <nav class="app-nav">
         <div class="wrapper">
-          <a routerLink="dashboard" routerLinkActive="active">Dashboard</a>
-          <a routerLink="settings" routerLinkActive="active">Settings</a>
-          <a routerLink="reports" routerLinkActive="active">Reports</a>
+          <a routerLink="eager" routerLinkActive="eager">Eager</a>
+          <a routerLink="lazy" routerLinkActive="lazy">Lazy</a>
         </div>
       </nav>
       <div class="wrapper">

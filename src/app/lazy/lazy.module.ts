@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // containers
-import { DashboardComponent } from './dashboard.component';
+import { LazyComponent } from './lazy.component';
 
 // routes
 export const ROUTES: Routes = [
-  { path: '', component: DashboardComponent }
+  { path: '', component: LazyComponent }
 ];
 
 @NgModule({
@@ -14,7 +14,7 @@ export const ROUTES: Routes = [
     RouterModule.forChild(ROUTES)
   ],
   declarations: [
-    DashboardComponent
+    LazyComponent
   ]
 })
-export class DashboardModule {}
+export class LazyModule {}
