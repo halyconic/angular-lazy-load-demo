@@ -1,3 +1,4 @@
+import { UuidModule } from './uuid/uuid.module';
 import { SharedModule } from './shared/shared.module';
 import { UuidService } from './uuid/uuid.service';
 import { NgModule } from '@angular/core';
@@ -20,7 +21,8 @@ export const ROUTES: Routes = [
     BrowserModule,
     SharedModule.forRoot(),
     SharedModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    UuidModule
   ],
   declarations: [
     AppComponent,

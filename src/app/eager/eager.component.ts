@@ -8,6 +8,7 @@ import { Component, Inject } from '@angular/core';
       <h2>Eager</h2>
       <p>Global: {{ globalUuidService.uuid }}</p>
       <p>Local: {{ localUuidService.uuid }}</p>
+      <app-uuid></app-uuid>
     </div>
   `
 })

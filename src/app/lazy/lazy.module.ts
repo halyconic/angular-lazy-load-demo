@@ -1,3 +1,4 @@
+import { UuidModule } from './../uuid/uuid.module';
 import { SharedModule } from './../shared/shared.module';
 import { UuidService } from './../uuid/uuid.service';
 import { NgModule } from '@angular/core';
@@ -14,7 +15,8 @@ export const ROUTES: Routes = [
 @NgModule({
   imports: [
     SharedModule,
-    RouterModule.forChild(ROUTES)
+    RouterModule.forChild(ROUTES),
+    UuidModule
   ],
   declarations: [
     LazyComponent
