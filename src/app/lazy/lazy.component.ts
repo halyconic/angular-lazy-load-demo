@@ -6,8 +6,8 @@ import { Component, Inject } from '@angular/core';
   template: `
     <div>
       <h2>Lazy</h2>
-      <p>Global: {{ globalUuidService.uuid }}</p>
-      <p>Local: {{ localUuidService.uuid }}</p>
+      <p class="global">Global: {{ globalUuidService.uuid }}</p>
+      <p class="local">Local: {{ localUuidService.uuid }}</p>
       <app-uuid></app-uuid>
     </div>
   `

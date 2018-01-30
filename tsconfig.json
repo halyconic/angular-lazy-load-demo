@@ -13,10 +13,14 @@
     "moduleResolution": "node",
     "noEmitHelpers": true,
     "noImplicitAny": true,
-    "outDir": "lib",
+    "outDir": "build",
     "rootDir": ".",
     "sourceMap": true,
     "skipLibCheck": true,
     "target": "es5"
-  }
+  },
+  "exclude": [
+    "build",
+    "node_modules"
+  ]
 }

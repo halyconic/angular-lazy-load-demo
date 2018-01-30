@@ -4,7 +4,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 @Component({
   selector: 'app-uuid',
   template: `
-    <p>Component: {{ uuid }}</p>
+    <p class="component">Component: {{ uuid }}</p>
   `
 })
 export class UuidComponent {
